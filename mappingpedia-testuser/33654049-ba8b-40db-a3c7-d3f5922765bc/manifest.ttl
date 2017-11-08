@@ -1,0 +1,37 @@
+@base <http://www.w3.org/2001/sw/rdb2rdf/test-cases/#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix mpv: <http://mappingpedia.linkeddata.es/vocabulary#> .
+@prefix mpi: <http://mappingpedia.linkeddata.es/instance#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+# mpv:R2RMLMappingDocument rdfs:subClassOf dcterms:BibliographicResource .
+mpi:mappingdocument-30e95792-45d1-4f77-a1eb-aa24d66171bb a mpv:R2RMLMappingDocument ;
+    mpv:mappingDocumentIdentifier "mappingdocument-30e95792-45d1-4f77-a1eb-aa24d66171bb" ;
+    mpv:mappingDocumentTitle "test mappings" ;
+    mpv:mappingDocumentDateSubmitted "2017-11-08 15:13:15.814726"^^xsd:dateTime;
+    mpv:mappingDocumentCreator "" ;
+    mpv:mappingDocumentLicense "Accept all the terms and conditions" ;
+    mpv:mappingDocumentSubject "test subject" ;
+    mpv:hasDataset mpi:ds-30e95792-45d1-4f77-a1eb-aa24d66171bb ;
+    mpv:hasMappingDocumentFile <https://raw.githubusercontent.com/oeg-upm/mappingpedia-contents-test/master/mappingpedia-testuser/30e95792-45d1-4f77-a1eb-aa24d66171bb/edificio-historico.r2rml.ttl> ;
+.
+
+
+# mpv:Dataset rdfs:subClassOf dcat:Dataset .
+mpi:ds-30e95792-45d1-4f77-a1eb-aa24d66171bb a mpv:Dataset ;
+    mpv:datasetIdentifier "data-30e95792-45d1-4f77-a1eb-aa24d66171bb" ;
+    mpv:datasetTitle "test dataset title" ;
+    mpv:datasetKeyword "testkeywords"  ;
+    mpv:datasetPublisher mpi:user-30e95792-45d1-4f77-a1eb-aa24d66171bb ;
+    mpv:datasetLanguage <http://id.loc.gov/vocabulary/iso639-1/en> ;
+    mpv:datasetDistribution mpi:ds-30e95792-45d1-4f77-a1eb-aa24d66171bb_distribution-0 ;
+.
+
+mpi:ds-30e95792-45d1-4f77-a1eb-aa24d66171bb_distribution-0 a mpv:DatasetDistribution;
+    mpv:distributionAccessURL <https://github.com/oeg-upm/mappingpedia-contents-test/blob/master/mappingpedia-testuser/30e95792-45d1-4f77-a1eb-aa24d66171bb/edificio-historico.csv> ;
+    mpv:distributionDownloadURL <https://raw.githubusercontent.com/oeg-upm/mappingpedia-contents-test/master/mappingpedia-testuser/30e95792-45d1-4f77-a1eb-aa24d66171bb/edificio-historico.csv> ;
+    mpv:distributionMediaType "text/csv" ;
+.
