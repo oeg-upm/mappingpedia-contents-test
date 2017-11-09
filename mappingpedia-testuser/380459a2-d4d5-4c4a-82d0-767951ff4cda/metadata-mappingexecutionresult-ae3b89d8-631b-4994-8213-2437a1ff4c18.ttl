@@ -1,0 +1,30 @@
+@base <http://mappingpedia.linkeddata.es/instance#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix mpv: <http://mappingpedia.linkeddata.es/vocabulary#> .
+@prefix mpi: <http://mappingpedia.linkeddata.es/instance/> .
+@prefix mpimd: <http://mappingpedia.linkeddata.es/instance/mappingdocument/> .
+@prefix mpids: <http://mappingpedia.linkeddata.es/instance/dataset/> .
+@prefix mpidd: <http://mappingpedia.linkeddata.es/instance/dataset/distribution/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+
+#mpv:MappingExecutionResultEntity rdfs:subClassOf prov:Entity .
+#mpimd:mappingpediaAgent rdfs:subClassOf prov:Agent .
+#mpimd:mappingExecutionActivity rdfs:subClassOf prov:Activity .
+
+mpimd:mappingExecutionResult-ae3b89d8-631b-4994-8213-2437a1ff4c18 a mpv:MappingExecutionResultEntity ;
+    dcterms:identifier "mappingExecutionResult-ae3b89d8-631b-4994-8213-2437a1ff4c18" ;
+    dcterms:title "Annotated Dataset ae3b89d8-631b-4994-8213-2437a1ff4c18" ;
+    dcterms:description "Annotated Dataset using the annotation: https://raw.githubusercontent.com//oeg-upm/mappingpedia-contents-test/master/mappingpedia-testuser/380459a2-d4d5-4c4a-82d0-767951ff4cda/example1-mapping-mysql.ttl" ;
+    prov:wasGeneratedBy mpimd:mappingExecutionActivity ;
+    prov:wasAttributedTo mpimd:mappingpediaAgent ;
+    prov:wasDerivedFrom <null> ;
+    prov:hadPrimarySource mpimd:mappingDocument-a8bfb875-f6c1-40f9-98eb-1e37fb3f4741 ;
+.
+
