@@ -1,0 +1,35 @@
+@base <http://mappingpedia.linkeddata.es/instance#> .
+@prefix dcterms: <http://purl.org/dc/elements/1.1/> .
+@prefix mpv: <http://mappingpedia.linkeddata.es/vocabulary#> .
+@prefix mpi: <http://mappingpedia.linkeddata.es/instance/> .
+@prefix mpimd: <http://mappingpedia.linkeddata.es/instance/mappingdocument/> .
+@prefix mpids: <http://mappingpedia.linkeddata.es/instance/dataset/> .
+@prefix mpidd: <http://mappingpedia.linkeddata.es/instance/dataset/distribution/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+
+mpv:Dataset rdfs:subClassOf dcat:Dataset .
+mpids:dataset-043a74d0-8397-499f-9c85-3a8279f880f2 a mpv:Dataset ;
+    mpv:datasetIdentifier "dataset-043a74d0-8397-499f-9c85-3a8279f880f2" ;
+    dcterms:title "043a74d0-8397-499f-9c85-3a8279f880f2" ;
+    dcat:keyword "" ;
+    dcterms:issued "2017-11-10T18:04:07"^^xsd:dateTime;
+    dcterms:modified "2017-11-10T18:04:07"^^xsd:dateTime;
+    #mpv:publisherId mpi:user-1 ;
+    #mpv:datasetLanguage <http://id.loc.gov/vocabulary/iso639-1/en> ;
+.
+
+mpids:dataset-043a74d0-8397-499f-9c85-3a8279f880f2 dcat:distribution mpidd:distribution-a50de560-bc39-4b76-b554-69ab25c8b98a .
+
+mpidd:distribution-a50de560-bc39-4b76-b554-69ab25c8b98a a dcat:Distribution;
+    dcat:mediaType "text/csv" ;
+    dcat:accessURL <https://api.github.com/repos/oeg-upm/mappingpedia-contents-test/contents/mappingpedia-testuser/043a74d0-8397-499f-9c85-3a8279f880f2/edificio-historico.csv?ref=master> ;
+    dcat:downloadURL <https://raw.githubusercontent.com/oeg-upm/mappingpedia-contents-test/master/mappingpedia-testuser/043a74d0-8397-499f-9c85-3a8279f880f2/edificio-historico.csv> ;
+.
+
